@@ -63,7 +63,7 @@ your_project/
 2. Add the following code at the top of your notebook to initialize Django:
 
 ```python
-from django-notebook-config import init_django
+from django_notebook_config import init_django
 
 # Initialize Django by specifying the project name
 init_django(project_name="config")
