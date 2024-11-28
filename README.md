@@ -1,4 +1,4 @@
-# django-jupyter-initializer
+# django-notebook-config
 
 Easily run Django queries and tasks within Jupyter Notebooks in IDEs.
 
@@ -21,7 +21,7 @@ Easily run Django queries and tasks within Jupyter Notebooks in IDEs.
 Install the package via pip:
 
 ```bash
-pip install django-jupyter-initializer
+pip install django-notebook-config
 ```
 
 ---
@@ -32,7 +32,7 @@ pip install django-jupyter-initializer
 
 On the same level as `manage.py`, create a folder to organize your Jupyter Notebooks. For example:
 
-```
+```ini
 your_project/
 ├── manage.py
 ├── config/
@@ -58,24 +58,18 @@ your_project/
 
 ---
 
-### Step 3: Install and Initialize django-jupyter-initializer
+### Step 3: Install and Initialize django-notebook-config
 
-1. Install the package:
-
-   ```bash
-   pip install django-jupyter-initializer
-
-   ```
 2. Add the following code at the top of your notebook to initialize Django:
 
-   ```python
-   from django-jupyter-initializer import init_django
+```python
+from django-notebook-config import init_django
 
-   # Initialize Django by specifying the project name
-   init_django(project_name="config")
-   ```
+# Initialize Django by specifying the project name
+init_django(project_name="config")
+```
 
-   Replace `"config"` with the name of your Django project module (where `settings.py` is located).
+Replace `"config"` with the name of your Django project module (where `settings.py` is located).
 
 ---
 
@@ -124,6 +118,6 @@ print(f"Total revenue for user {test_user_id}: {calculate_user_revenue(test_user
 ### Troubleshooting
 
 * **Jupyter Kernel Not Working** : Ensure you’ve selected the correct Python environment in VS Code.
-* **Initialization Error** : Verify that the `project_name` in `init_django()` matches the folder containing your `settings.py`.
+* __Initialization Error__ : Verify that the `project_name` in `init_django()` matches the folder containing your `settings.py`.
 
 Now you're ready to streamline your Django development workflow using Jupyter Notebooks! 🚀
