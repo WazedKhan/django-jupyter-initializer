@@ -9,7 +9,7 @@ long_description = (current_dir / "README.md").read_text()
 
 setup(
     name="django-notebook-config",
-    version="0.1.0",
+    version="0.1.1",
     description="A utility to easily use Django in IDEs Jupyter Notebooks.",
     long_description=long_description,
     long_description_content_type="text/markdown",
