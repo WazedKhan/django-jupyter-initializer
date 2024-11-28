@@ -8,17 +8,17 @@ current_dir = pathlib.Path(__file__).parent
 long_description = (current_dir / "README.md").read_text()
 
 setup(
-    name="django-jupyter-initializer",
+    name="django-notebook-config",
     version="0.1.0",
     description="A utility to easily use Django in IDEs Jupyter Notebooks.",
-    long_description=long_description,  # Use the README as the long description
-    long_description_content_type="text/markdown",  # Markdown format
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Abdul Wajed Khan",
     author_email="wajed.abdul.khan@gmail.com",
-    license="MIT",  # License type
-    url="https://github.com/WazedKhan/django-jupyter-initializer",
+    license="MIT",
+    url="https://github.com/WazedKhan/django-notebook-config",
     packages=find_packages(),
-    install_requires=[],  # No dependencies other than Django
+    install_requires=[],
     python_requires=">=3.6",
     classifiers=[
         "Programming Language :: Python :: 3",
